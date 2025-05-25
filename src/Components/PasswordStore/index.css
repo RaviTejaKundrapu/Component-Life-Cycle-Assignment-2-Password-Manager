@@ -1,0 +1,226 @@
+.yourPassword-bg-container {
+  border: rgb(17, 196, 255) 2px solid;
+  background-color: #454f84;
+  width: 96%;
+  max-width: 700px; /* limit max width */
+  border-radius: 6px;
+  margin: 10px auto 0 auto; /* center horizontally */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.head_count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 30%;
+}
+
+.count_style {
+  border: 2px solid rgb(0, 255, 145);
+  border-radius: 6px;
+  padding: 4px;
+  color: gold;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nopasstext {
+  color: white;
+  font-family: 'roboto';
+  font-size: 23px;
+}
+
+.searchItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* wrap on small screens */
+  gap: 10px;
+}
+
+.PasswordHeading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+  flex: 1 1 100%; /* full width on small screens */
+  margin-bottom: 8px;
+}
+
+.searchContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.lineBtwIconAndSearch {
+  background-color: rgb(69, 56, 56);
+  border: none;
+  width: 2px;
+  height: 20px;
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
+.inputSearch {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 85%;
+  flex-grow: 1;
+}
+
+.line {
+  background-color: #9ba9eb;
+  border: none;
+  width: 93%;
+  height: 2px;
+  margin: 12px auto;
+}
+
+.showPasswordCheckBox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 8px;
+}
+
+.showPasswordCheckBox {
+  height: 20px;
+  width: 22px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.passwordContainerStoreInArray {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.imageNopassword {
+  height: auto;
+  width: 40%;
+  max-width: 150px;
+  margin: 12px auto;
+}
+
+.list-container-ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.list_li {
+  border: 2px solid #aeb3b9; /* Dodger Blue border for clarity */
+  background-color: #1e2f5f; /* Light blue background for contrast */
+  padding: 10px 12px;
+  width: fit-content;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.3);
+  color: #fffdfd; /* Dark text for readability */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars-img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 6px;
+}
+
+.delete-icon {
+  width: 19px;
+  height: 19px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .searchItemContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .PasswordHeading {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .searchContainer {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 10px;
+  }
+
+  .inputSearch {
+    font-size: 1rem;
+  }
+
+  .showPasswordCheckBox-container {
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .list-container-ul {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .list_li {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .imageNopassword {
+    width: 60%;
+    max-width: 120px;
+  }
+}
